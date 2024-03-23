@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Phish Sniffer beta</title>
+	</head>
+	<body class="p-3">
+		<h1>How to sniff for phishing emails:</h1>
+		<h3>Step 1: Open an email and select "show original".</h3>
+		<form id="sniff_fields" action="">
+			<h3>Step 2: Find the from email address.</h3>
+			<input type="text" name="from_email" required>
+			<h3>Step 3: Find the return path.</h3>
+			<input type="text" name="return_path" required>
+			<h3>All done, press the Sniff button!</h3>
+		</form>
+		<!-- currently button/script stuff does not work -->
+		<button onclick="sniffTest()">Sniff</button>
+		<p id="sniff_results"></p>
+		<script>
+			function sniffTest() {
+				var x = document.getElementById("sniff_fields")
+				document.getElementById("sniff_results").innerHTML = x;
+			}
+		</script>
+	</body>
+</html>
