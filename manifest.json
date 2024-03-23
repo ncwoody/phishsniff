@@ -1,0 +1,10 @@
+{
+	"name": "phish-sniffer",
+	"version": "0.0.1",
+	"description": "Sniff phishing emails",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_popup": "popup.html",
+		"browser_style": true
+	}
+}
